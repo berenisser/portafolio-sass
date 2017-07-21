@@ -1,0 +1,50 @@
+nav{
+	background-color: $transparente;
+	box-shadow: $nada;
+}
+
+body{
+	background-color: $body_color;
+}
+
+.slider{
+	position: $pos_abs;
+	top: $zero;
+	left: $zero;
+	z-index: -1;
+	ul li{
+		h1{
+			padding-top: 80px;
+		}
+		a{
+			margin-top: 40px;
+		}
+	}
+}
+
+.cuerpo-abs{
+	position: $pos_abs;
+	top: 550px;
+	padding-top: 50px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	margin-left: $treinta;
+	margin-right: $treinta;
+	background-color: $color_fondo;
+	box-shadow: gray;
+	.city{
+		background: url(../img/img_city.jpg) 50% 50% / 100% no-repeat fixed;
+		background-size:cover;
+		margin: 0;
+		padding: 30px 0;
+		h3{
+			color: $color_fondo;
+		}
+		p{
+			color: $color_fondo;
+		}
+	}
+	.productos{
+		background-color: $body_color;
+	}
+}
