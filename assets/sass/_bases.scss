@@ -1,6 +1,9 @@
 nav{
 	background-color: $transparente;
 	box-shadow: $nada;
+	.nav-wrapper li a{
+		font-size: 13px;
+	}
 }
 
 body{
@@ -24,14 +27,13 @@ body{
 
 .cuerpo-abs{
 	position: $pos_abs;
-	top: 550px;
+	top: 530px;
 	padding-top: 50px;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
 	margin-left: $treinta;
 	margin-right: $treinta;
 	background-color: $color_fondo;
-	box-shadow: gray;
 	.city{
 		background: url(../img/img_city.jpg) 50% 50% / 100% no-repeat fixed;
 		background-size:cover;
@@ -43,8 +45,34 @@ body{
 		p{
 			color: $color_fondo;
 		}
+		iframe{
+			border: 2px solid $color_fondo;
+		}
 	}
 	.productos{
 		background-color: $body_color;
+		.columna-padding{
+			padding: 50px 30px 30px 30px;
+			
+		}
+		.tarjeta{
+			background-color: $color_fondo;
+			border-radius: 6px;
+			position: relative;
+			.tarjeta-foto{
+				@include contenedorcito();
+				img{
+					@include contenedorcito();
+					border-radius: 6px;
+					position: $pos_abs;
+					top: -20px;
+					left: 7%;
+				}
+			}
+		}
+
+		.contenido-productos{
+			padding: 120% 20% 10%;
+		}
 	}
 }

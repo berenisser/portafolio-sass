@@ -6775,6 +6775,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 nav {
   background-color: transparent;
   box-shadow: none; }
+  nav .nav-wrapper li a {
+    font-size: 13px; }
 
 body {
   background-color: #E1E1E1; }
@@ -6791,14 +6793,13 @@ body {
 
 .cuerpo-abs {
   position: absolute;
-  top: 550px;
+  top: 530px;
   padding-top: 50px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   margin-left: 30px;
   margin-right: 30px;
-  background-color: #fff;
-  box-shadow: gray; }
+  background-color: #fff; }
   .cuerpo-abs .city {
     background: url(../img/img_city.jpg) 50% 50%/100% no-repeat fixed;
     background-size: cover;
@@ -6808,7 +6809,27 @@ body {
       color: #fff; }
     .cuerpo-abs .city p {
       color: #fff; }
+    .cuerpo-abs .city iframe {
+      border: 2px solid #fff; }
   .cuerpo-abs .productos {
     background-color: #E1E1E1; }
+    .cuerpo-abs .productos .columna-padding {
+      padding: 50px 30px 30px 30px; }
+    .cuerpo-abs .productos .tarjeta {
+      background-color: #fff;
+      border-radius: 6px;
+      position: relative; }
+      .cuerpo-abs .productos .tarjeta .tarjeta-foto {
+        margin: 0 auto;
+        width: 85%; }
+        .cuerpo-abs .productos .tarjeta .tarjeta-foto img {
+          margin: 0 auto;
+          width: 85%;
+          border-radius: 6px;
+          position: absolute;
+          top: -20px;
+          left: 7%; }
+    .cuerpo-abs .productos .contenido-productos {
+      padding: 120% 20% 10%; }
 
 /*# sourceMappingURL=main.css.map */
