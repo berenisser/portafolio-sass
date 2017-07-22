@@ -6779,7 +6779,7 @@ nav {
     font-size: 13px; }
 
 body {
-  background-color: #E1E1E1; }
+  background-color: #F0F0F0; }
 
 .slider {
   position: absolute;
@@ -6816,7 +6816,7 @@ body {
     .cuerpo-abs .city iframe {
       border: 2px solid #fff; }
   .cuerpo-abs .productos {
-    background-color: #E1E1E1;
+    background-color: #F0F0F0;
     padding: 70px 0 50px; }
     .cuerpo-abs .productos .columna-padding {
       padding: 50px 30px 30px 30px; }
@@ -6913,5 +6913,42 @@ body {
       opacity: 0; }
     .cuerpo-abs .portafolio .cada-portafolio-hover:hover {
       opacity: 1; }
+  .cuerpo-abs .team {
+    padding: 0 50px 50px; }
+    .cuerpo-abs .team .team-member {
+      padding: 20px; }
+    .cuerpo-abs .team .team-1 img {
+      border-radius: 4px;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
+  .cuerpo-abs .price {
+    background-color: #F0F0F0;
+    padding: 50px; }
+    .cuerpo-abs .price .tabla-precio {
+      background-color: #fff;
+      border-radius: 5px; }
+    .cuerpo-abs .price .precio-contenido {
+      padding: 20px; }
+      .cuerpo-abs .price .precio-contenido h3 {
+        font-size: 55px;
+        font-weight: bold;
+        height: 55px;
+        margin-bottom: 0; }
+        .cuerpo-abs .price .precio-contenido h3 small.dolar {
+          position: relative;
+          top: -23px; }
+        .cuerpo-abs .price .precio-contenido h3 small {
+          font-size: 16px;
+          font-weight: normal; }
+      .cuerpo-abs .price .precio-contenido td {
+        color: #999999; }
+      .cuerpo-abs .price .precio-contenido .linea {
+        border-bottom: 1px solid #999999; }
+  .cuerpo-abs .clients {
+    padding: 50px; }
+    .cuerpo-abs .clients img {
+      width: 100px;
+      height: 100px; }
 
 /*# sourceMappingURL=main.css.map */

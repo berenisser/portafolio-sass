@@ -95,17 +95,70 @@ body{
 		}
 		.cada-portafolio-hover{
 			position: $pos_abs;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
+			top: $zero;
+			bottom: $zero;
+			left: $zero;
+			right: $zero;
 			border-radius: 6px;
 			background-color: rgba(0,0,0,0.6);
-			opacity: 0;
+			opacity: $zero;
 		}
 		.cada-portafolio-hover:hover{
 			opacity:1;
 		}
-		
+	}
+
+	.team{
+		padding: 0 50px 50px;
+		.team-member{
+			padding: 20px;
+		}
+		.team-1{
+			img{
+				border-radius: 4px;
+				width: 100%;
+				background-size:cover;
+				background-position: center;
+			}
+		}
+	}
+
+	.price{
+		background-color: $body_color;
+		padding: 50px;
+		.tabla-precio{
+			background-color: $color_fondo;
+			border-radius: 5px;
+		}
+		.precio-contenido{
+			padding: 20px;
+			h3{
+				font-size: 55px;
+				font-weight: bold;
+				height: 55px;
+				margin-bottom: 0;
+				small.dolar{
+					position: relative;
+					top: -23px;
+				}
+				small{
+				font-size: 16px;
+				font-weight: normal;
+				}
+			}
+			td{
+				color: $tabla_gris;
+				}
+			.linea{
+				border-bottom: 1px solid $tabla_gris;
+			}
+		}
+	}
+	.clients{
+		padding: 50px;
+		img{
+			width: 100px;
+			height: 100px;
+		}
 	}
 }
