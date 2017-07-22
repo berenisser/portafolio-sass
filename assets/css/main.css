@@ -6800,6 +6800,10 @@ body {
   margin-left: 30px;
   margin-right: 30px;
   background-color: #fff; }
+  .cuerpo-abs h5 {
+    color: #999;
+    font-size: 17px;
+    line-height: 27px; }
   .cuerpo-abs .city {
     background: url(../img/img_city.jpg) 50% 50%/100% no-repeat fixed;
     background-size: cover;
@@ -6812,7 +6816,8 @@ body {
     .cuerpo-abs .city iframe {
       border: 2px solid #fff; }
   .cuerpo-abs .productos {
-    background-color: #E1E1E1; }
+    background-color: #E1E1E1;
+    padding: 70px 0 50px; }
     .cuerpo-abs .productos .columna-padding {
       padding: 50px 30px 30px 30px; }
     .cuerpo-abs .productos .tarjeta {
@@ -6830,6 +6835,83 @@ body {
           top: -20px;
           left: 7%; }
     .cuerpo-abs .productos .contenido-productos {
-      padding: 120% 20% 10%; }
+      padding: 120% 20% 20%; }
+  .cuerpo-abs .portafolio {
+    padding: 70px 30px 50px; }
+    .cuerpo-abs .portafolio .cada-portafolio-1 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_1.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-2 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_2.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-3 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_3.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-4 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_4.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-5 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_5.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-6 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_6.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-7 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_7.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-8 {
+      position: relative;
+      height: 280px;
+      border-radius: 6px;
+      background-image: url(../img/img_portafolio_8.jpg);
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-hover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 6px;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0; }
+    .cuerpo-abs .portafolio .cada-portafolio-hover:hover {
+      opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

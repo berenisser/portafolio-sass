@@ -34,6 +34,10 @@ body{
 	margin-left: $treinta;
 	margin-right: $treinta;
 	background-color: $color_fondo;
+	h5{
+		@include letraSubtitulo();
+	}
+
 	.city{
 		background: url(../img/img_city.jpg) 50% 50% / 100% no-repeat fixed;
 		background-size:cover;
@@ -49,11 +53,12 @@ body{
 			border: 2px solid $color_fondo;
 		}
 	}
+
 	.productos{
 		background-color: $body_color;
+		padding: 70px 0 50px;
 		.columna-padding{
-			padding: 50px 30px 30px 30px;
-			
+			@include cuerpoPadding();
 		}
 		.tarjeta{
 			background-color: $color_fondo;
@@ -70,9 +75,37 @@ body{
 				}
 			}
 		}
-
 		.contenido-productos{
-			padding: 120% 20% 10%;
+			padding: 120% 20% 20%;
 		}
+	}
+
+	.portafolio{
+		padding: 70px 30px 50px;
+		@for $i from 1 through 8{
+			.cada-portafolio-#{$i}{
+				position: relative;
+				height: 280px;
+				border-radius: 6px;
+				background-image: url(../img/img_portafolio_#{$i}.jpg);
+				background-size:cover;
+				background-position: center;
+				margin: 20px 0;
+			}
+		}
+		.cada-portafolio-hover{
+			position: $pos_abs;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 6px;
+			background-color: rgba(0,0,0,0.6);
+			opacity: 0;
+		}
+		.cada-portafolio-hover:hover{
+			opacity:1;
+		}
+		
 	}
 }
