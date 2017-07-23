@@ -34,14 +34,26 @@ body{
 	margin-left: $treinta;
 	margin-right: $treinta;
 	background-color: $color_fondo;
-	h5{
-		@include letraSubtitulo();
+	.intro{
+		padding: 0 50px 50px;
+		h5{
+			@include letraSubtitulo();
+			margin: 30px 0;
+		}
+		h4{
+			@include letraSubSubTitulo();
+		}
+		.bullet{
+			padding-top: 70px;
+			i{
+				margin-bottom: 30px;
+			}
+		}
 	}
-
 	.city{
 		@include seccionCiudad();
 		h3{
-			color: $color_fondo;
+			@include letraTiruloBlanco();
 		}
 		p{
 			color: $color_fondo;
@@ -54,6 +66,12 @@ body{
 	.productos{
 		background-color: $body_color;
 		padding: 70px 0 50px;
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
 		.columna-padding{
 			@include cuerpoPadding();
 		}
@@ -61,6 +79,7 @@ body{
 			background-color: $color_fondo;
 			border-radius: 6px;
 			position: relative;
+			margin-top: 40px;
 			.tarjeta-foto{
 				@include contenedorcito();
 				img{
@@ -70,15 +89,35 @@ body{
 					top: -20px;
 					left: 7%;
 				}
+				img:hover{
+					@include contenedorcito();
+					border-radius: 6px;
+					position: $pos_abs;
+					top: -30px;
+					left: 7%;
+					transition-timing-function: ease;
+					transition-delay: 0s;
+					transition-property: all; 
+					transition-duration: 0.3s;
+				}
 			}
 		}
 		.contenido-productos{
 			padding: 120% 20% 20%;
+			h5{
+				@include letraSubSubTitulo();
+			}
 		}
 	}
 
 	.portafolio{
 		padding: 70px 30px 50px;
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
 		@for $i from 1 through 8{
 			.cada-portafolio-#{$i}{
 				position: relative;
@@ -107,8 +146,17 @@ body{
 
 	.team{
 		padding: 0 50px 50px;
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
 		.team-member{
 			padding: 20px;
+			h4{
+				@include letraSubSubTitulo();
+			}
 		}
 		.team-1{
 			img{
@@ -120,6 +168,12 @@ body{
 	.price{
 		background-color: $body_color;
 		padding: 50px;
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
 		.tabla-precio{
 			background-color: $color_fondo;
 			border-radius: 5px;
@@ -150,15 +204,35 @@ body{
 	}
 	.clients{
 		padding: 50px;
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
 		img{
 			width: 100px;
 			height: 100px;
 		}
+		.cliente{
+			margin-top: 30px;
+			h4{
+				@include letraSubSubTitulo();
+			}
+		}
+		
 	}
 	.subscribe{
 		background-image: url(../img/about.jpg);
 		background-size:cover;
 		padding: 70px;
+		h3{
+			@include letraTiruloBlanco();
+		}
+		h5{
+			@include letraSubtituloBlanco();
+			padding-bottom: 30px;
+		}
 		.caja-input{
 			background-color: $color_fondo;
 			border-radius: 5px;
@@ -175,12 +249,64 @@ body{
 
 	.blog{
 		padding: 50px;
-		img{
-			@include fotosCuadradas();
+		h3{
+			@include letraTirulo();
+		}
+		h5{
+			@include letraSubtitulo();
+		}
+		.blog-unit{
+			margin-top: 60px;
+			h4{
+				@include letraSubSubTitulo();
+			}
+			h6{
+				margin-top: 30px;
+			}
+			img{
+				@include fotosCuadradas();
+			}
 		}
 	}
-	
+
 	.contacto{
+		h3{
+			@include letraTiruloBlanco();
+		}
 		@include seccionCiudad();
+		h5{
+			@include letraSubSubTituloBlanco();
+			margin-top: 0;
+		}
+		.tarjeta-contacto{
+			@include tablaBlanca();
+			margin-top: 30px;
+			.titulo-pink{
+				border-radius: 5px;
+				padding: 12px;
+				position: relative;
+				top: -50px;
+			}
+			form{
+				margin-top: -50px;
+			}
+			input{
+				margin-bottom: 0;
+			}
+			textarea{
+				height: 128px;
+				margin-bottom: 0;
+			}
+			button{
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.cuerpo-abs{
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 }

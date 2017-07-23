@@ -3,14 +3,53 @@
 	width: 85%;
 }
 
+@mixin letraTirulo(){
+	color: #3C4858;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+
+@mixin letraTiruloBlanco(){
+	color: $color_fondo;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
 @mixin letraSubtitulo(){
 	color: $subtitulo_gris;
-	font-size: 17px;
+	font-size: 17.5px;
 	line-height: 27px;
+}
+
+@mixin letraSubtituloBlanco(){
+	color: $color_fondo;
+	font-size: 17.5px;
+	line-height: 27px;
+}
+
+@mixin letraSubSubTitulo(){
+	font-size: 18px;
+	color: #3C4858;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+
+@mixin letraSubSubTituloBlanco(){
+	font-size: 18.2px;
+	color: $color_fondo;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
 }
 
 @mixin cuerpoPadding(){
 	padding: 50px 30px 30px 30px;
+}
+
+@mixin tablaBlanca(){
+	background-color: $color_fondo;
+	padding: 15px;
+	border-radius: 5px;
 }
 
 @mixin seccionCiudad(){
