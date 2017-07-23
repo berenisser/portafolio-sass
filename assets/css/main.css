@@ -1968,7 +1968,7 @@ ul:not(.browser-default) {
     list-style-type: none; }
 
 a {
-  color: #039be5;
+  color: #d81b60;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
@@ -6808,7 +6808,7 @@ body {
     background: url(../img/img_city.jpg) 50% 50%/100% no-repeat fixed;
     background-size: cover;
     margin: 0;
-    padding: 30px 0; }
+    padding: 50px; }
     .cuerpo-abs .city h3 {
       color: #fff; }
     .cuerpo-abs .city p {
@@ -6963,5 +6963,17 @@ body {
         margin-top: 15px; }
     .cuerpo-abs .subscribe .break-word {
       word-wrap: break-word; }
+  .cuerpo-abs .blog {
+    padding: 50px; }
+    .cuerpo-abs .blog img {
+      border-radius: 4px;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
+  .cuerpo-abs .contacto {
+    background: url(../img/img_city.jpg) 50% 50%/100% no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 50px; }
 
 /*# sourceMappingURL=main.css.map */

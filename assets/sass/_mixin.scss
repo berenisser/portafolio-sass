@@ -12,3 +12,17 @@
 @mixin cuerpoPadding(){
 	padding: 50px 30px 30px 30px;
 }
+
+@mixin seccionCiudad(){
+	background: url(../img/img_city.jpg) 50% 50% / 100% no-repeat fixed;
+	background-size:cover;
+	margin: 0;
+	padding: 50px;
+}
+
+@mixin fotosCuadradas(){
+	border-radius: 4px;
+	width: 100%;
+	background-size:cover;
+	background-position: center;
+}
