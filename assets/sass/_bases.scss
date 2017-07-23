@@ -161,4 +161,21 @@ body{
 			height: 100px;
 		}
 	}
+	.subscribe{
+		background-image: url(../img/about.jpg);
+		background-size:cover;
+		padding: 70px;
+		.caja-input{
+			background-color: $color_fondo;
+			border-radius: 5px;
+			padding: 10px;
+			.btn-subscribe{
+				width: 100%;
+				margin-top: 15px;
+			}
+		}
+		.break-word{
+			word-wrap: break-word;
+		}
+	}
 }
