@@ -74,6 +74,9 @@ body{
 			i{
 				margin-bottom: 30px;
 			}
+			.letraP{
+				@include letraPGrande();
+			}
 		}
 	}
 	.city{
@@ -133,6 +136,14 @@ body{
 			h5{
 				@include letraSubSubTitulo();
 			}
+			p{
+				@include letraPSmall();
+				margin-bottom: 20px;
+			}
+			span{
+				font-size: 16px;
+				color: #3c4858;
+			}
 		}
 	}
 
@@ -183,6 +194,18 @@ body{
 			padding: 20px;
 			h4{
 				@include letraSubSubTitulo();
+			}
+			p{
+				@include letraPSmall();
+				margin: 10px 0;
+			}
+			h6{
+				font-size: 12.6px;
+				color: #999;
+				font-weight: bold;
+			}
+			i{
+				margin-right: 10px;
 			}
 		}
 		.team-1{
@@ -246,6 +269,14 @@ body{
 			h4{
 				@include letraSubSubTitulo();
 			}
+			h6{
+				font-size: 12.6px;
+				color: #999;
+				font-weight: bold;
+			}
+			p{
+				@include letraPSmall();
+			}
 		}
 		
 	}
@@ -293,6 +324,9 @@ body{
 			img{
 				@include fotosCuadradas();
 			}
+			p{
+				@include letraPSmall();
+			}
 		}
 	}
 
@@ -313,6 +347,11 @@ body{
 				padding: 12px;
 				position: relative;
 				top: -50px;
+			}
+			h4{
+				font-size: 20px;
+				font-weight: bold;
+				font-family: 'Roboto Slab', serif;
 			}
 			form{
 				margin-top: -50px;
@@ -341,6 +380,8 @@ body{
 			}
 			p{
 				margin-top: 0;
+				margin-bottom: 10px;
+				@include letraPSmall();
 			}
 			hr{
 				width: 100%;

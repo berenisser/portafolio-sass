@@ -42,6 +42,16 @@
 	font-family: 'Roboto Slab', serif;
 }
 
+@mixin letraPGrande(){
+	font-size: 16px;
+	color: #999;
+}
+
+@mixin letraPSmall(){
+	font-size: 14px;
+	color: #999;
+}
+
 @mixin cuerpoPadding(){
 	padding: 50px 30px 30px 30px;
 }
